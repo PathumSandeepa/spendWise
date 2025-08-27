@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spendwise/screens/add_expense_page.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -14,7 +15,10 @@ class HomePage extends StatelessWidget {
 
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          print('Add button pressed!');
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const AddExpensePage()),
+          );
         },
         tooltip: 'Add Expense',
         child: const Icon(Icons.add),
