@@ -2,6 +2,7 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:spendwise/screens/add_expense_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -88,7 +89,10 @@ class _HomePageState extends State<HomePage> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          print('Add button pressed!');
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const AddExpensePage()),
+          );
         },
         backgroundColor: Colors.deepPurple,
         child: const Icon(Icons.add, color: Colors.white),

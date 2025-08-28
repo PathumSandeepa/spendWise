@@ -1,6 +1,6 @@
 {
-    "name": "myapp",
-    "short_name": "myapp",
+    "name": "spendWise",
+    "short_name": "spendWise",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
