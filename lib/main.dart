@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_core/firebase_core.dart'; // Import Firebase Core
-import 'package:spendwise/firebase_options.dart'; // Import the new options file
-import 'package:spendwise/screens/home_page.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:spendwise/firebase_options.dart';
+import 'package:spendwise/auth/auth_gate.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      home: const HomePage(),
+      home: const AuthGate(),
     );
   }
 }
